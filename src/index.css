@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: optimaNova;
+  src: url("/fonts/OptimaNovaLTProLight.otf");
+}
+
+.optimaNova {
+  font-family: optimaNova;
+}
