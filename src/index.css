@@ -10,3 +10,20 @@
 .optimaNova {
   font-family: optimaNova;
 }
+
+/* scrollbar start */
+/* width */
+::-webkit-scrollbar {
+  width: 0.65em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #f8f2ea;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #051f10;
+}
+/* scrollbar end */

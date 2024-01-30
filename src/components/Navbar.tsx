@@ -1,25 +1,63 @@
+import { useEffect } from "react";
 import { NAV_LINKS } from "../config";
+import { useTranslation } from "react-i18next";
+import useLanguage from "../hooks/use-language";
 
 const Navbar = () => {
+  // const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
+  const lng = useLanguage();
+
+  useEffect(() => {
+    i18n.changeLanguage(lng.language);
+  }, [lng]);
+
+  // const changeLanguage = () => {
+  //   if (lng.language === "en") {
+  //     lng.setArabic();
+  //   } else {
+  //     lng.setEnglish();
+  //   }
+  // };
+
   return (
-    <div className="">
-      <div className="w-full h-5 bg-green-950"></div>
-      <div className="h-12 px-10 flex justify-between items-center my-3 relative">
-        <button>En</button>
+    <div className="sticky top-0 bg-white pb-6">
+      <div
+        className={`h-10 px-16 flex justify-between items-center my-3 relative mx-auto w-full ${
+          lng.language === "ar" ? "flex-row-reverse" : ""
+        }`}
+      >
+        {lng.language === "en" ? (
+          <button
+            onClick={() => {
+              lng.setArabic();
+            }}
+          >
+            ع
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              lng.setEnglish();
+            }}
+          >
+            ENG
+          </button>
+        )}
         <h1 className="text-[#20462F] text-2xl font-light uppercase font-display absolute left-1/2 -translate-x-1/2">
           LUDIVINE
         </h1>
-        <ul className="flex justify-end items-center gap-12">
-          <li className="hover:scale-105 duration-300">
+        <ul className="flex justify-end items-center gap-8">
+          <li className="hover:scale-110 hover:-translate-x-1 duration-500">
             <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="19"
+                width="14"
+                height="14"
                 viewBox="0 0 20 19"
                 fill="none"
               >
-                <g clip-path="url(#clip0_4_39)">
+                <g clipPath="url(#clip0_4_39)">
                   <path
                     d="M8.06473 0C10.2918 0 12.3076 0.836198 13.7671 2.18822C15.2265 3.54023 16.1291 5.40792 16.1291 7.47105C16.1291 9.4516 15.2973 11.2517 13.9398 12.5887C13.9645 12.6056 13.9884 12.6243 14.0109 12.645L19.8167 18.0161C20.0599 18.2402 20.0613 18.6048 19.8191 18.8302C19.5772 19.0557 19.1837 19.0566 18.9405 18.8325L13.1347 13.4614C13.0978 13.4274 13.0666 13.3903 13.0407 13.3509C11.6699 14.3477 9.94225 14.9422 8.06456 14.9422C5.83753 14.9422 3.82131 14.106 2.36189 12.754C0.902627 11.402 0 9.53417 0 7.47105C0 5.40792 0.902627 3.54023 2.36205 2.18822C3.82148 0.836353 5.8377 0 8.06473 0ZM12.8654 3.02364C11.6368 1.88547 9.93958 1.18147 8.06473 1.18147C6.18987 1.18147 4.49244 1.88547 3.26384 3.02364C2.03525 4.16182 1.27533 5.73417 1.27533 7.47105C1.27533 9.20792 2.03525 10.7804 3.26384 11.9186C4.49227 13.0568 6.1897 13.7608 8.06473 13.7608C9.93958 13.7608 11.6368 13.0568 12.8654 11.9186C14.094 10.7806 14.854 9.20807 14.854 7.47105C14.854 5.73417 14.094 4.16182 12.8654 3.02364Z"
                     fill="#20462F"
@@ -33,18 +71,18 @@ const Navbar = () => {
               </svg>
             </button>
           </li>
-          <li className="hover:scale-105 duration-300">
+          {/* <li className="hover:scale-105 duration-300">
             <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="19"
-                height="21"
+                width="14"
+                height="15"
                 viewBox="0 0 19 21"
                 fill="none"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M13.8647 1.68494C12.7993 0.598854 11.2957 0 9.54133 0C7.78692 0 6.28343 0.598854 5.21808 1.68494C4.15356 2.77019 3.56917 4.29827 3.56917 6.07895C3.56917 8.47626 4.6106 10.0214 5.89952 10.949C6.15001 11.1291 6.40889 11.2855 6.67005 11.4204C5.22964 11.817 4.06006 12.5086 3.10783 13.3664C1.60213 14.7227 0.668902 16.4676 0.0401642 18.0302C-0.0737306 18.3132 0.0628815 18.6352 0.345314 18.7494C0.627735 18.8635 0.949007 18.7266 1.0629 18.4435C1.66135 16.9563 2.51604 15.3855 3.84497 14.1884C5.16055 13.0034 6.96975 12.1579 9.54133 12.1579C11.9454 12.1579 13.6809 12.8968 14.9692 13.9572C16.2683 15.0264 17.1431 16.4481 17.7699 17.8535C18.1881 18.7912 17.4542 19.8947 16.3021 19.8947H3.57848C3.27396 19.8947 3.02709 20.1422 3.02709 20.4474C3.02709 20.7525 3.27396 21 3.57848 21H16.3021C18.124 21 19.5721 19.186 18.7768 17.4026C18.1112 15.9105 17.1487 14.3208 15.6691 13.103C14.7909 12.3802 13.741 11.7972 12.4839 11.4402C13.1562 11.0677 13.7089 10.5732 14.1487 10.0127C15.1003 8.80011 15.5135 7.29491 15.5135 6.07895C15.5135 4.29827 14.9292 2.77019 13.8647 1.68494ZM13.0783 2.4598C13.911 3.30876 14.4108 4.54384 14.4108 6.07895C14.4108 7.07351 14.065 8.33147 13.2819 9.32942C12.5139 10.3082 11.3154 11.0526 9.54133 11.0526C8.82386 11.0526 7.586 10.8018 6.5427 10.051C5.52778 9.32068 4.67195 8.10271 4.67195 6.07895C4.67195 4.54384 5.17172 3.30876 6.00447 2.4598C6.83639 1.61167 8.04321 1.10526 9.54133 1.10526C11.0395 1.10526 12.2463 1.61167 13.0783 2.4598Z"
                   fill="#20462F"
                 />
@@ -55,8 +93,8 @@ const Navbar = () => {
             <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="20"
+                width="11"
+                height="15"
                 viewBox="0 0 15 20"
                 fill="none"
               >
@@ -66,7 +104,7 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-          </li>
+          </li> */}
         </ul>
       </div>
       <hr className="border-[#897358]" />
@@ -77,7 +115,7 @@ const Navbar = () => {
               <li key={link.value}>
                 <a
                   href={link.value}
-                  className="uppercase font-display font-light text-[#707070] text-base hover:text-[#20462F] duration-300 hover:font-normal"
+                  className="uppercase font-display font-light text-[#707070] text-base hover:text-[#c0a482] duration-200 hover:font-normal"
                 >
                   {link.label}
                 </a>
