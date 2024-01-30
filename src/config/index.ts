@@ -130,3 +130,18 @@ export const FOOTER_LINKS = [
     },
   ],
 ];
+
+export const ELEGANCE = [
+  {
+    label: "Rings",
+    image: "/src/assets/blackR.png",
+    description:
+      "Discover our exemplary jewellery creations at your nearest Ludivine boutique",
+  },
+  {
+    label: "Bracelet",
+    image: "/src/assets/blackL.png",
+    description:
+      "Discover our exemplary jewellery creations at your nearest Ludivine boutique",
+  },
+];
