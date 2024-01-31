@@ -19,6 +19,10 @@ export const NAV_LINKS = [
     label: "Our Story",
     value: "/our-Story" as const,
   },
+  {
+    label: "Collections",
+    value: "/collections" as const,
+  },
 ];
 
 export const HERO_IMGS = [
@@ -123,10 +127,6 @@ export const FOOTER_LINKS = [
     {
       label: "Size Guide",
       value: "/size-guide",
-    },
-    {
-      label: "Book An Appointment",
-      value: "/book",
     },
   ],
 ];

@@ -10,18 +10,21 @@ const Collections = () => {
       <h6 className="text-zinc-600 font-light font-['Optima nova LT Pro'] font-body text-sm mt-2 text-center uppercase mb-5 tracking-widest">
         FEATURED
       </h6>
-      <div className="w-full flex justify-between items-start">
+      <div className="w-full grid md:grid-cols-4 gap-3 md:gap-8 grid-cols-2">
         {Collection_items.map((item) => (
-          <div key={item.label} className="w-[300px] group">
+          <div
+            key={item.label}
+            className=" group flex flex-col justify-start items-center mb-2"
+          >
             <img
               src={item.image}
               alt={item.label}
               className="object-cover w-full"
             />
-            <h6 className="text-lg font-display uppercase mt-2 mb-2 text-center font-extralight text-[#333] group-hover:text-[#c0a482] duration-500">
+            <h6 className=" md:text-lg font-display uppercase mt-2 mb-2 text-center font-extralight text-[#333] group-hover:text-[#c0a482] duration-500">
               {item.label}
             </h6>
-            <p className="text-zinc-600 font-light font-['Optima nova LT Pro'] capitalize tracking-wide font-body text-sm leading-7 w-full mt-0 text-center">
+            <p className="text-zinc-600 font-light font-['Optima nova LT Pro'] capitalize tracking-wide font-body md:text-sm leading-7 w-full mt-0 text-center text-xs">
               {item.description}
             </p>
           </div>

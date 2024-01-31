@@ -4,45 +4,44 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Footer = () => {
   return (
-    <MaxWidthWrapper className="mt-20 sm:h-[330px] md:max-w-screen-xl">
-      <div className="flex justify-between items-start w-full">
-        <div className="flex justify-start items-start gap-20">
-          <div className="flex flex-col justify-start items-start gap-2">
+    <MaxWidthWrapper className="mt-20 pb-7">
+      <div className="flex flex-col-reverse justify-start items-center md:flex-row md:justify-between md:items-start w-full">
+        <div className="w-[318px] md:w-auto flex justify-between md:justify-start items-start gap-3 md:gap-20">
+          <div className="flex flex-col justify-start items-start md:items-start gap-2">
             {FOOTER_LINKS[0].map((linkItem) => (
               <a
                 key={linkItem.value}
                 href={linkItem.value}
-                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500"
+                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500 md:text-left text-xs md:text-base"
               >
                 {linkItem.label}
               </a>
             ))}
           </div>
-          <div className="flex flex-col justify-start items-start gap-2">
+          <div className="flex flex-col justify-start items-start md:items-start gap-2">
             {FOOTER_LINKS[1].map((linkItem) => (
               <a
                 key={linkItem.value}
                 href={linkItem.value}
-                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500"
+                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500 md:text-left text-xs md:text-base"
               >
                 {linkItem.label}
               </a>
             ))}
           </div>
-          <div className="flex flex-col justify-start items-start gap-2">
+          <div className="flex flex-col justify-start items-start md:items-start gap-2">
             {FOOTER_LINKS[2].map((linkItem) => (
               <a
                 key={linkItem.value}
                 href={linkItem.value}
-                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500"
+                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500 md:text-left text-xs md:text-base"
               >
                 {linkItem.label}
               </a>
             ))}
           </div>
-          <div className="flex flex-col justify-start items-start"></div>
         </div>
-        <div className="flex flex-col justify-start items-start">
+        <div className="flex flex-col justify-start md:items-start items-center mb-5">
           <h6 className="text-black text-lg font-light font-body font-['Optima nova LT Pro'] leading-7">
             Non blanditiis ex necessitatibus.
           </h6>
@@ -116,7 +115,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-[#897358] mt-7 mb-4" />
-      <p className="text-stone-300 text-[15px] font-normal font-['Inter'] leading-tight">
+      <p className="text-stone-300 text-[15px] font-normal font-['Inter'] leading-tight text-center">
         © 2023.By R-link . All rights reserved. Privacy Policy
       </p>
     </MaxWidthWrapper>

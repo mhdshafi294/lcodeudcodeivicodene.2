@@ -5,11 +5,11 @@ import Discover from "./Discover";
 import Collections from "./Collections";
 import Gallery from "./Gallery";
 import Explore2 from "./Explore2";
-import Elegance from "./Elegance";
+// import Elegance from "./Elegance";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Hero />
       <div className="w-full flex justify-center items-center mt-9 mb-11">
         <hr className=" w-full max-w-[1280px] mx-3 border-[#E7DDCD]" />
@@ -19,7 +19,7 @@ const Home = () => {
       <Explore1 />
       <Discover />
       <Collections />
-      <Elegance />
+      {/* <Elegance /> */}
       <Explore2 />
     </div>
   );
