@@ -1,0 +1,167 @@
+{
+  "global": {
+    "new": "إضافة",
+    "delete": "حذف",
+    "phone": "رقم الهاتف",
+    "load-more": "تحميل المزيد",
+    "show-more": "عرض المزيد",
+    "loading-text": "يرجى الانتظار...",
+    "loading": "يتم التحميل...",
+    "error": "خطأ",
+    "created_at": "تاريخ الانشاء",
+    "actions": "الاجراءات",
+    "next": "التالي",
+    "prev": "السابق",
+    "close": "إغلاق",
+    "open": "فتح",
+    "add": "إضافة",
+    "cancel": "إلغاء",
+    "accept": "قبول",
+    "reject": "رفض",
+    "since": "منذ",
+    "search": "بحث",
+    "restore": "استعادة",
+    "edit": "تعديل",
+    "rename": "اعادة تسمية",
+    "cut": "قص",
+    "save": "حفظ",
+    "paste": "لصق",
+    "delete-title": "هل أنت متأكد أنك تريد الحذف؟",
+    "error-description": "يرجى التحقق من الاتصال بشبكة الانترنت",
+    "email": "البريد الالكتروني",
+    "password": "كلمة المرور",
+    "confirm-password": "تأكيد كلمة المرور",
+    "current-password": "كلمة المرور الحالية",
+    "file-name": "اسم الملف",
+    "folder-name": "اسم المجلد",
+    "name": "الاسم",
+    "back-to": "عودة إلى",
+    "event": "حدث",
+    "task": "مهمة",
+    "announcement": "إعلان",
+    "add-documents": "إضافة ملف",
+    "recent-files": "آخر الملفات",
+    "upload-file": "رفع ملف",
+    "click-to-upload": "إضغط لرفع",
+    "folder": "المجلد",
+    "or-drag-and-drop": "أو اسحب وضع هنا",
+    "maximum-file-size": "أكبر حجم مسموح للملف هو {{size}}",
+    "drop-the-files-here": "ضع الملف هنا",
+    "file": "الملف",
+    "files": "الملفات",
+    "folders": "المجلدات",
+    "projects": "المشاريع",
+    "image": "الصورة",
+    "mb": "ميغا بايت",
+    "no-user-found": "لا يوجد عميل",
+    "select-client": "إختر عميلا",
+    "please.wait": "يرجى الانتظار",
+    "are-you-absolutely-sure": "هل أنت متأكد تماما؟"
+  },
+  "pagination": {
+    "number-row": "عدد الاسطر في الصفحة:",
+    "current-page": "صفحة {{current}} من {{total}}"
+  },
+  "error-message": {
+    "name": "حقل الاسم مطلوب",
+    "email": "حقل البريد الالكتروني مطلوب",
+    "email-invalid": "صيغة البريد الالكتروني غير صالحة",
+    "password": "حقل كلمة المرور مطلوب",
+    "confirm-password": "حقل تأكيد كلمة المرور مطلوب",
+    "confirm-password-match": "لا يوجد تطابق مع كلمة المرور",
+    "password-short": "كلمة المرور يجب ان تكون اكبر من سبعة محارف",
+    "otp": "حقل رمز التحقق مطلوب",
+    "otp-invalid": "يجب ان يتألف رمز التحقق من ستة خانات",
+    "file-invalid-type": "تنسيق {{file}} غير صحيح",
+    "file-too-large": "حجم الملف يجب ان لا يتجاوز ال {{size}} بايت"
+  },
+  "home": {
+    "hello": "مرحبا",
+    "welcome-sentence": "مرحبا بك في منصتك لمتابعة الأعمال، هنا يمكنك متابعة جميع مشاريعك قيد الانشاء "
+  },
+  "documents": {
+    "drop-file-to-upload-it-to": "ألق الملف ليتم رفعه إلى",
+    "this-folder": "هذا المجلد",
+    "create-folder": "إنشاء مجلد جديد",
+    "folder-name": "اسم المجلد",
+    "new-folder": "مجلد جديد",
+    "new-project": "مشروع جديد",
+    "add_new_project": "إضافة مشروع جديد",
+    "project-title": "عنوان المشروع",
+    "this-folder-is-empty": "هذا المجلد فارغ",
+    "folder-Settings": "إعدادات المجلد",
+    "file-Settings": "إعدادات الملف",
+    "delete-file-description": "هذا الأمر لا يمكن التراجع عنه و سيقوم بحذف نهائي للملف والبيانات بداخله من خوادمنا.",
+    "delete-folder-description": "هذا الأمر لا يمكن التراجع عنه و سيقوم بحذف نهائي للمجلد وبياناتك بداخله من خوادمنا."
+  },
+  "profile": {
+    "change-password": {
+      "title": "تغيير كلمة المرور",
+      "subtitle": "تأكد من أن كلمة المرور الجديدة مكونة من 8 أحرف على الأقل بما في ذلك رقم وحرف كبير.",
+      "button": "حفظ التغيرات",
+      "form": {
+        "current": "كلمة المرور الحالية",
+        "new": "كلمة المرور الجديدة",
+        "confirm": "تأكيد كلمة المرور الجديدة"
+      }
+    },
+    "edit": "تعديل الحساب",
+    "passport": "جواز السفر",
+    "language": "اللغة",
+    "change-language": "تغيير اللغة",
+    "select-language": "إختر اللغة",
+    "sign-out": "تسجيل الخروج",
+    "desktop-notification": "اشعارات سطح المكتب",
+    "desktop-notification-description": "استقبال الاشعارات في سطح المكتب",
+    "change-image": {
+      "accept": "ضع الملف هنا",
+      "reject": "تنسيق الصورة غير صحيح",
+      "click": "إضغط لرفع",
+      "drag": "أو اسحب وضع هنا",
+      "button": "تغيير الصورة"
+    },
+    "customize-theme-description": "خصص المظهر على جهازك كما ترغب",
+    "theme": "المظهر",
+    "themes": {
+      "light": "داكن",
+      "dark": "فاتح",
+      "navy": "كحلي"
+    }
+  },
+  "client": {
+    "add": "اضافة عميل جديد",
+    "edit": "تعديل معلومات الحساب",
+    "change-image": "تغيير صورة الملف الشخصي",
+    "show-projects": "عرض المشاريع",
+    "fields": {
+      "name": "اسم العميل",
+      "phone": "رقم الهاتف",
+      "date": "تاريخ الانشاء",
+      "actions": "الاجراءات"
+    }
+  },
+  "api": {
+    "loading": {
+      "move-file": "جارِ نقل الملف",
+      "move-folder": "جارِ نقل المجلد",
+      "delete-file": "جارِ حذف الملف",
+      "delete-folder": "جارِ حذف المجلد",
+      "logout": "جارِ تسجيل الخروج"
+    },
+    "success": {
+      "move-file": "تم نقل الملف بنجاح",
+      "move-folder": "تم نقل المجلد بنجاح",
+      "upload-file": "تم رفع الملف بنجاح",
+      "rename-file": "تم تغيير اسم الملف بنجاح",
+      "rename-folder": "تم تغيير اسم المجلد بنجاح",
+      "create-folder": "تم إنشاء المجلد بنجاح",
+      "delete-file": "تم حذف الملف بنجاح",
+      "delete-folder": "تم حذف المجلد بنجاح",
+      "login": "تم تسجيل الدخول بنجاح",
+      "forgot-password": "تم ارسال رمز التحقق الى بريدك الالكتروني",
+      "check-code": "رمز التحقق صحيح",
+      "reset-password": "تم تغيير كلمة المرور بنجاح",
+      "logout": "تم تسجيل الخروج بنجاح"
+    }
+  }
+}

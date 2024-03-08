@@ -6,39 +6,66 @@ const Footer = () => {
   return (
     <MaxWidthWrapper className="mt-20 pb-7">
       <div className="flex flex-col-reverse justify-start items-center md:flex-row md:justify-between md:items-start w-full">
-        <div className="w-[318px] md:w-auto flex justify-between md:justify-start items-start gap-3 md:gap-20">
-          <div className="flex flex-col justify-start items-start md:items-start gap-2">
+        <div className="w-[318px] flex-wrap md:w-auto flex justify-between md:justify-start items-start gap-3 md:gap-20">
+          <div className="flex flex-col justify-start items-center md:items-start">
             {FOOTER_LINKS[0].map((linkItem) => (
               <a
                 key={linkItem.value}
                 href={linkItem.value}
-                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500 md:text-left text-xs md:text-base"
+                className="text-zinc-900 tracking-wide font-body uppercase hover:text-[#897358] duration-500 md:text-left text-xs md:text-[14px] font-light font-['Optima nova LT Pro'] leading-[42px]"
               >
                 {linkItem.label}
               </a>
             ))}
           </div>
-          <div className="flex flex-col justify-start items-start md:items-start gap-2">
+          <div className="flex flex-col justify-start items-center md:items-start">
             {FOOTER_LINKS[1].map((linkItem) => (
               <a
                 key={linkItem.value}
                 href={linkItem.value}
-                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500 md:text-left text-xs md:text-base"
+                className="text-zinc-900 tracking-wide font-body uppercase hover:text-[#897358] duration-500 md:text-left text-xs md:text-[14px] font-light font-['Optima nova LT Pro'] leading-[42px]"
               >
                 {linkItem.label}
               </a>
             ))}
           </div>
-          <div className="flex flex-col justify-start items-start md:items-start gap-2">
-            {FOOTER_LINKS[2].map((linkItem) => (
-              <a
-                key={linkItem.value}
-                href={linkItem.value}
-                className="text-zinc-900 font-light font-['Optima nova LT Pro'] tracking-wide font-body leading-7 uppercase hover:text-[#897358] duration-500 md:text-left text-xs md:text-base"
+          <div className="flex md:flex-col justify-center items-start md:items-start text-zinc-900 tracking-wide hover:text-goldy duration-500 md:text-left text-xs md:text-[14px] gap-8 mx-auto md:mx-0 mt-5 md:mt-0 flex-1">
+            <a
+              href="tel:+976 998787654"
+              className="flex md:flex-row items-center justify-between gap-4 "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
               >
-                {linkItem.label}
-              </a>
-            ))}
+                <path
+                  d="M7.77194 2.43905L8.84894 2.09505C9.85694 1.77305 10.9349 2.29405 11.3669 3.31205L12.2269 5.34005C12.6019 6.22305 12.3939 7.26205 11.7129 7.90805L9.81994 9.70605C9.93694 10.7821 10.2979 11.8411 10.9039 12.8831C11.4798 13.8912 12.252 14.7736 13.1749 15.4781L15.4509 14.7181C16.3129 14.4311 17.2519 14.7621 17.7809 15.5391L19.0129 17.3491C19.6289 18.2531 19.5179 19.4991 18.7549 20.2651L17.9369 21.0861C17.1229 21.9031 15.9609 22.2001 14.8849 21.8641C12.3459 21.0721 10.0119 18.7211 7.88194 14.8111C5.74894 10.8951 4.99694 7.57105 5.62394 4.84305C5.88794 3.69505 6.70594 2.78005 7.77394 2.43905"
+                  fill="black"
+                />
+              </svg>
+              <p>(+976) 998787654</p>
+            </a>
+            <a
+              href="mailto:Ludivin@gmail.com"
+              className="flex md:flex-row items-center justify-between gap-4 "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z"
+                  fill="black"
+                />
+              </svg>
+              <p>Ludivin@gmail.com</p>
+            </a>
           </div>
         </div>
         <div className="flex flex-col justify-start md:items-start items-center mb-5">
@@ -48,7 +75,7 @@ const Footer = () => {
           <form className="flex mt-[10px] mb-[20px] h-[48px]">
             <input
               type="text"
-              className="w-[249px] h-full border border-black mr-[9px]"
+              className="w-[249px] h-full border border-black mr-[9px] px-2"
             />
             <Button
               onClick={() => {}}
@@ -115,9 +142,20 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-[#897358] mt-7 mb-4" />
-      <p className="text-stone-300 text-[15px] font-normal font-['Inter'] leading-tight text-center">
-        © 2023.By R-link . All rights reserved. Privacy Policy
-      </p>
+      <div className="flex justify-center items-center gap-4">
+        <p className="text-stone-300 text-xs md:text-[15px] font-normal font-['Inter'] leading-tight text-center">
+          © 2023.By R-link
+        </p>
+        <p className="text-stone-300 text-xs md:text-[15px] font-normal font-['Inter'] leading-tight text-center">
+          All rights reserved
+        </p>
+        <a
+          href="/privacy"
+          className="text-stone-300 hover:text-stone-500 hover:underline duration-200 text-xs md:text-[15px] font-bold font-['Inter'] leading-tight text-center"
+        >
+          Privacy Policy
+        </a>
+      </div>
     </MaxWidthWrapper>
   );
 };

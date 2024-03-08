@@ -3,12 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: optimaNova;
-  src: url("/fonts/OptimaNovaLTProLight.otf");
+  font-family: "display";
+  src: url("./assets/fonts/Chronicle_Display_Semibold.otf");
+  /* display: swap; */
+}
+@font-face {
+  font-family: "optimaNova";
+  src: url("./assets/fonts/OptimaNovaLTProLight.otf");
 }
 
-.optimaNova {
-  font-family: optimaNova;
+@layer base {
+  body,
+  * {
+    @apply font-optimaNova;
+  }
+  :root {
+    --primary: #20462f;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: #707070;
+    --secondary-foreground: 0 0% 9%;
+
+    --goldy: #897358;
+  }
 }
 
 /* scrollbar start */
@@ -27,3 +44,27 @@
   background-color: #051f10;
 }
 /* scrollbar end */
+
+/* Flashing */
+.flashing:hover div img {
+  opacity: 1;
+  -webkit-animation: flash 0.5s;
+  animation: flash 0.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Flashing End*/

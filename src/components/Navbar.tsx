@@ -6,10 +6,12 @@ import useMobileNavbar from "../hooks/use-mobileNav";
 import { cn } from "./../lib/utils";
 
 import { NAV_LINKS } from "../config";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isSearch, setIsSearch] = useState(false);
   const { isOpen, onOpen, onClose } = useMobileNavbar();
+  const { pathname } = useLocation();
 
   // const { t, i18n } = useTranslation();
   const { i18n } = useTranslation();
@@ -39,10 +41,10 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="sticky w-full top-0 bg-white md:pb-6 overflow-hidden z-50">
+    <div className="sticky w-full top-0 bg-white pb-1 overflow-hidden z-50">
       <div
         className={cn(
-          `h-10 px-7 md:px-16 flex flex-row-reverse md:flex-row justify-between items-center my-3 relative mx-auto w-full`,
+          `h-10 px-7 md:px-16 flex flex-row-reverse md:flex-row justify-between items-center my-4 relative mx-auto w-full relative`,
           { " md:flex-row-reverse": lng.language === "ar" }
         )}
       >
@@ -64,9 +66,11 @@ const Navbar = () => {
             EN
           </button>
         )}
-        <h1 className="text-[#20462F] text-2xl font-light uppercase font-display absolute left-1/2 -translate-x-1/2">
-          LUDIVINE
-        </h1>
+        <Link to="/">
+          <h1 className="text-[#20462F] text-2xl font-light uppercase font-display absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+            LUDIVINE
+          </h1>
+        </Link>
         <div
           className={cn(
             "hidden md:flex items-center justify-end  duration-500 overflow-hidden",
@@ -113,7 +117,7 @@ const Navbar = () => {
         >
           <span
             className={`bg-steel-500 block transition-all duration-500 ease-out h-[1.5px] w-6 rounded-sm bg-[#b9a893] ${
-              isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+              isOpen ? "rotate-45 translate-y-0.5" : "-translate-y-0.5"
             }`}
           ></span>
           <span
@@ -130,19 +134,34 @@ const Navbar = () => {
           </span>
         </button>
       </div>
-      <hr className="border-[#897358]" />
+      <hr className="border-[#897358] mt-4" />
       {/*Desktop nav start*/}
       <div className="w-full hidden md:flex justify-center items-center px-2">
         <nav className="w-full hidden md:flex justify-center items-center mt-4">
           <ul className="hidden md:flex w-full max-w-[1077px]  justify-between items-center px-2 sm:px-0">
             {NAV_LINKS.map((link) => (
-              <li key={link.value}>
+              <li
+                className="group w-fit flex flex-col items-center"
+                key={link.value}
+              >
                 <a
                   href={link.value}
-                  className="uppercase font-display font-light text-[#707070] text-xs sm:text-base hover:text-[#c0a482] duration-200 hover:font-normal"
+                  className={cn(
+                    "uppercase font-display font-light text-[#707070] text-xs sm:text-base duration-200 hover:font-normal"
+                  )}
                 >
                   {link.label}
                 </a>
+                <div
+                  className={cn(
+                    "h-[1px] w-[100px] bg-[#E7DDCD] group-hover:opacity-100 opacity-0 mt-4 duration-300",
+                    {
+                      "opacity-100": pathname.includes(
+                        link.label.toLocaleLowerCase() //TODO: replace with link.value
+                      ),
+                    }
+                  )}
+                />
               </li>
             ))}
           </ul>

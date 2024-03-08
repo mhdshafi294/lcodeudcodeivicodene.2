@@ -20,13 +20,13 @@ const MobileNavbar: React.FC = () => {
     <div>
       <div
         className={cn(
-          "md:hidden absolute h-screen w-screen bg-black",
+          "md:hidden fixed top-[64px] left-0 h-full w-screen bg-black z-40",
           isOpen ? "bg-opacity-50" : "bg-opacity-0 hidden"
         )}
       ></div>
       <div
         className={cn(
-          "md:hidden h-[100vh] fixed top-[64px] pt-[11px] left-0 bg-white z-50 px-4 flex flex-col justify-start items-start duration-500",
+          "md:hidden h-screen fixed top-[64px] pt-[11px] left-0 bg-white px-4 flex flex-col justify-start items-start duration-500 z-50",
           isOpen ? "w-[80%]" : "w-[0%] -translate-x-[120%]"
         )}
       >
@@ -103,12 +103,10 @@ const MobileNavbar: React.FC = () => {
             onClick={() => {
               lng.setEnglish();
             }}
-            className={
-              (cn(
-                "ml-2 uppercase text-sm font-thin hover:text-[#c0a482] hover:font-normal text-zinc-500  font-['Optima nova LT Pro'] tracking-wide font-body leading-7 duration-500 uppercase text-sm font-thin hover:font-normal text-zinc-500  font-['Optima nova LT Pro'] tracking-wide font-body leading-7"
-              ),
-              isOpen ? "" : "-translate-x-[120%]")
-            }
+            className={cn(
+              "ml-2 uppercase text-sm font-thin hover:text-[#c0a482] duration-500 hover:font-normal text-zinc-500  font-['Optima nova LT Pro'] tracking-wide font-body leading-7",
+              isOpen ? "" : "-translate-x-[120%]"
+            )}
           >
             English
           </button>

@@ -1,0 +1,168 @@
+{
+  "global": {
+    "delete": "delete",
+    "download": "download",
+    "new": "new",
+    "edit": "edit",
+    "phone": "phone number",
+    "rename": "rename",
+    "save": "save",
+    "load-more": "load more",
+    "show-more": "show more",
+    "loading-text": "please wait...",
+    "loading": "loading...",
+    "error": "error",
+    "close": "close",
+    "open": "open",
+    "next": "next",
+    "prev": "previous",
+    "search": "search",
+    "paste": "Paste",
+    "add": "create",
+    "actions": "actions",
+    "created_at": "created at",
+    "accept": "accept",
+    "reject": "reject",
+    "restore": "restore",
+    "cut": "cut",
+    "since": "since",
+    "cancel": "cancel",
+    "error-description": "please check your internet connection",
+    "delete-title": "are you sure you to delete?",
+    "email": "email",
+    "file-name": "file-name",
+    "folder-name": "folder name",
+    "password": "password",
+    "confirm-password": "confirm password",
+    "current-password": "current password",
+    "name": "name",
+    "folder": "folder",
+    "back-to": "back to",
+    "event": "event",
+    "task": "task",
+    "announcement": "Announcement",
+    "add-documents": "Add Documents",
+    "recent-files": "Recent Files",
+    "upload-file": "Upload File",
+    "click-to-upload": "Click to upload",
+    "or-drag-and-drop": "or drag and drop",
+    "maximum-file-size": "Maximum file size {{size}}",
+    "drop-the-files-here": "Drop the files here",
+    "file": "file",
+    "files": "files",
+    "folders": "folders",
+    "projects": "projects",
+    "image": "image",
+    "mb": "MB",
+    "no-user-found": "No user found.",
+    "select-client": "select client",
+    "please.wait": "please wait",
+    "are-you-absolutely-sure": "Are you absolutely sure?"
+  },
+  "pagination": {
+    "number-row": "Rows per page:",
+    "current-page": "page {{current}} of {{total}}"
+  },
+  "error-message": {
+    "name": "Name field is required",
+    "email": "Email field is required",
+    "email-invalid": "Invalid email format",
+    "password": "Password field is required",
+    "confirm-password": "Confirm password field is required",
+    "confirm-password-match": "Password confirmation does not match",
+    "password-short": "Password must be more than seven characters",
+    "otp": "otp field is required",
+    "otp-invalid": "The verification code must be six digits long.",
+    "file-invalid-type": "Incorrect {{file}} format",
+    "file-too-large": "The file size must not exceed {{size}}"
+  },
+  "documents": {
+    "drop-file-to-upload-it-to": "Drop file to upload it to",
+    "this-folder": "this folder",
+    "folder-name": "folder name",
+    "new-folder": "New folder",
+    "new-project": "New project",
+    "create-folder": "create new folder",
+    "add_new_project": "Add new project",
+    "project-title": "Project Title",
+    "this-folder-is-empty": "This folder is empty",
+    "folder-Settings": "folder Settings",
+    "file-Settings": "file Settings",
+    "delete-file-description": "This action cannot be undone This will permanently delete your file and remove all data in it from our servers.",
+    "delete-folder-description": "This action cannot be undone This will permanently delete your folder and remove your data in it from our servers."
+  },
+  "profile": {
+    "change-password": {
+      "title": "change password",
+      "subtitle": "Make sure your new password is at least 8 characters long including a number and a capital letter.",
+      "button": "save changes",
+      "form": {
+        "current": "Current password",
+        "new": "New password",
+        "confirm": "Confirm new password"
+      }
+    },
+    "edit": "Edit Profile",
+    "passport": "passport",
+    "language": "Language",
+    "change-language": "Change Language",
+    "select-language": "Select your language",
+    "sign-out": "Sign out",
+    "desktop-notification": "Desktop Notification",
+    "desktop-notification-description": "Receive push notification in desktop",
+    "change-image": {
+      "accept": "Drop the files here",
+      "reject": "Incorrect image format",
+      "click": "Click to upload",
+      "drag": "or drag and drop",
+      "button": "change image"
+    },
+    "customize-theme-description": "Customize how your theme looks on your device",
+    "theme": "Theme",
+    "themes": {
+      "light": "Light",
+      "dark": "Dark",
+      "navy": "Navy"
+    }
+  },
+  "home": {
+    "hello": "Hello",
+    "welcome-sentence": "Welcome to your portal, here you can follow up with all of your in progress projects"
+  },
+  "client": {
+    "add": "add new client",
+    "edit": "edit account information",
+    "change-image": "change profile image",
+    "show-projects": "show projects",
+    "fields": {
+      "name": "name",
+      "phone": "phone number",
+      "created_at": "created at",
+      "actions": "actions"
+    }
+  },
+  "api": {
+    "loading": {
+      "move-file": "Moving file...",
+      "move-folder": "Moving folder...",
+      "delete-file": "Deleting file..",
+      "delete-folder": "Deleting folder..",
+      "logout": "Logging out..."
+    },
+    "success": {
+      "move-file": "File has been moved successfully",
+      "move-folder": "Folder has been moved successfully",
+      "upload-file": "File has been uploaded successfully",
+      "rename-file": "File has been renamed successfully",
+      "rename-folder": "Folder has been renamed successfully",
+      "create-folder": "Folder has been created successfully",
+      "delete-file": "File has been deleted successfully",
+      "delete-folder": "Folder has been deleted successfully",
+      "login": "logged in successfully",
+      "forgot-password": "A verification code has been sent to your email",
+      "check-code": "The verification code is correct!",
+      "reset-password": "password changed successfully!",
+      "logout": "logged out successfully"
+    }
+  }
+}
