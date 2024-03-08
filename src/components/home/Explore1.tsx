@@ -16,7 +16,7 @@ const Explore1 = () => {
       </p>
       <Link
         to={"/rings"}
-        className="px-[30px] h-12 border border-[#051F10] text-center text-[#051F10] text-xs font-light font-body leading-[33px] tracking-wide flex justify-center items-center duration-500 hover:border-[#897358] hover:text-white hover: hover:bg-[#897358] capitalize"
+        className="px-[62px] py-[12px] border border-[#051F10] text-center text-[#051F10] text-[18px] font-light font-body leading-[33px] tracking-wide flex justify-center items-center duration-500 hover:border-[#897358] hover:text-white hover: hover:bg-[#897358] capitalize"
       >
         Explore
       </Link>

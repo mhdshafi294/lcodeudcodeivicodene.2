@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "display";
-  src: url("./assets/fonts/Chronicle_Display_Semibold.otf");
+  src: url("./assets/fonts/Chronicle_Display_Roman.woff2");
   /* display: swap; */
 }
 @font-face {
   font-family: "optimaNova";
-  src: url("./assets/fonts/OptimaNovaLTProLight.otf");
+  src: url("./assets/fonts/OptimaNovaLTProLight.woff2");
 }
 
 @layer base {
@@ -48,12 +48,12 @@
 /* Flashing */
 .flashing:hover div img {
   opacity: 1;
-  -webkit-animation: flash 0.5s;
-  animation: flash 0.5s;
+  -webkit-animation: flash 1s;
+  animation: flash 1s;
 }
 @-webkit-keyframes flash {
   0% {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
@@ -61,7 +61,7 @@
 }
 @keyframes flash {
   0% {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   100% {
     opacity: 1;

@@ -22,7 +22,7 @@ const Collections = () => {
               <img
                 src={item.image}
                 alt={item.label}
-                className="object-cover w-full aspect-square group-hover:scale-150 "
+                className="object-cover w-full aspect-square group-hover:scale-150  duration-700 ease-in-out"
               />
             </div>
             <h6 className=" md:text-lg font-display uppercase mt-2 mb-2 text-center font-extralight text-[#333] group-hover:text-[#c0a482] duration-500">

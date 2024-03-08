@@ -84,7 +84,7 @@ const Navbar = () => {
             type="text"
             placeholder="I am looking for..."
             className={cn(
-              "outline-none border-b focus:border-b-2 border-[#c0a482] duration-500 mr-1 pl-1 py-0.5",
+              "outline-none border-b focus:border-b-2 border-[#c0a482] duration-500 transition-[width] mr-1 pl-1 py-0.5",
               { "w-36 focus": isSearch, "w-0": !isSearch }
             )}
           />

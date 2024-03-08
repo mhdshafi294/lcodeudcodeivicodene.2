@@ -16,10 +16,10 @@ const Home = () => {
         <hr className=" w-full max-w-[1280px] mx-3 border-[#E7DDCD]" />
       </div>
       <Categories />
-      <Gallery />
       <Explore1 />
       <Discover />
       <Collections />
+      <Gallery />
       <Explore2 />
     </Fragment>
   );
